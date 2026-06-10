@@ -1,6 +1,5 @@
 package myApp;
 
-import myApp.config.HibernateConfig;
 import myApp.dao.DaoImpl;
 import myApp.model.User;
 import myApp.serviсe.Serviсe;
