@@ -1,24 +1,17 @@
 package myApp;
 
-import myApp.config.HibernateConfig;
-import myApp.dao.DaoImpl;
 import myApp.model.User;
 import myApp.serviсe.Serviсe;
-import myApp.serviсe.ServiсeImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import java.util.List;
 
-@ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {HibernateConfig.class, ServiсeImpl.class, DaoImpl.class})
-@Transactional
+@SpringBootTest
 public class UserControllerTest {
 
     @Autowired
